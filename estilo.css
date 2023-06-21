@@ -1,0 +1,118 @@
+.card{
+
+    position: relative;
+    width: 550px;
+    height: 400px;
+
+}
+
+.card div{
+
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+
+}
+
+.card .front{
+
+    background-color: aqua;
+    transform: perspective(500px) rotateY(0deg);
+
+}
+
+.card .back{
+
+    background-color: blue;
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card:hover .front{
+
+    background-color: aqua;
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card:hover .back{
+
+    background-color: blue;
+    transform: perspective(500px) rotateY(360deg);
+
+}
+
+.card img{
+
+    width: 550px;
+    height: 400px;
+
+}
+
+.card h2{
+
+    font-size: 20px;
+
+}
+
+.card2{
+
+    position: relative;
+    width: 550px;
+    height: 400px;
+
+}
+
+.card2 div{
+
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1.5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card2 .front{
+
+    background-color: aqua;
+    transform: perspective(500px) rotateY(0deg);
+
+}
+
+.card2 .back{
+
+    background-color: brown;
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card2:hover .front{
+
+    background-color: aqua;
+    transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card2:hover .back{
+
+    background-color: brown;
+    transform: perspective(500px) rotateY(360deg);
+
+}
+
+.card2 img{
+
+    width: 550px;
+    height: 400px;
+
+}
+
